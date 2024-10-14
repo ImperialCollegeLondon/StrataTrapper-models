@@ -41,14 +41,16 @@ In detail, specifications can be found in preprint [2].
 
 To run the supplied models, PFLOTRAN-OGS-1.8 installed on Ubuntu 22.04 is required. A dedicated Docker image can be used instead, which is covered in the [next section](#docker-image).
 
-1. Go to a model directory, e.g., Endurance.\
-Using the command line from repository root:
+For Endurance:
+
+1. Unarchive large files with characteristic curves `chc[xyz].data` from `chc[xyz].zip` located at [`endurance/include/`](endurance/include/).
+2. Go to a model directory. Using the command line from repository root:
 
     ```shell
     cd endurance
     ```
 
-2. Start a simulation using the `run.sh` shell script
+3. Start a simulation using the `run.sh` shell script
 
     ```shell
     bash ./run.sh <model_name> [number_of_processes]
@@ -69,7 +71,7 @@ Using the command line from repository root:
     Currently, memory demand per process is significantly higher for upscaled models.
     Thus, it's preferable to use fewer processes for `-upsc` models, expecting slightly higher computation times.
 
-3. Visualize simulation results using [ResInsight](https://resinsight.org/) or equivalents. Example:
+4. Visualize simulation results using [ResInsight](https://resinsight.org/) or equivalents.
 
     | Viscous-limit upscaling        | Upscaled with StrataTrapper    |
     |--------------------------------|--------------------------------|
