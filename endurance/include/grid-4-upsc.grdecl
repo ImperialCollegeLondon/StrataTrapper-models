@@ -1,0 +1,11 @@
+INCLUDE
+"grid-4.grdecl" /
+
+INCLUDE
+"KRNUMX.inc" /
+
+INCLUDE
+"KRNUMY.inc" /
+
+INCLUDE
+"KRNUMZ.inc" /

@@ -1,0 +1,26 @@
+INCLUDE
+"include/simulation-common.inc" /
+
+SUBSURFACE
+
+INCLUDE
+"include/subsurface-common.inc" /
+
+MATERIAL_PROPERTY rock
+    ID 1
+    CHARACTERISTIC_CURVES chc
+END
+
+GRID
+    TYPE grdecl "include/grid-4.grdecl"
+END
+
+EXTERNAL_FILE "include/chc-base.inc"
+
+INCLUDE
+"include/wells-prod.sch" /
+
+INCLUDE
+"include/wells-inj-4.sch" /
+
+END_SUBSURFACE
