@@ -1,0 +1,1 @@
+docker build --progress=plain --platform linux/amd64 -t pflotran-ogs .
