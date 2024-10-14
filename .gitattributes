@@ -1,0 +1,4 @@
+*.in -linguist-detectable
+*.inc -linguist-detectable
+*.grdecl -linguist-detectable
+*.sch -linguist-detectable
