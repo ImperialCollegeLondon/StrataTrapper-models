@@ -79,7 +79,7 @@ For Endurance:
 
 ## Docker image
 
-To avoid manual installation of PFLOTRAN-OGS, we provide [Docker](https://www.docker.com/) represented by the [`Dockerfile`](Dockerfile).
+To avoid manual installation of PFLOTRAN-OGS, we provide a [Docker](https://www.docker.com/) image described by the [`Dockerfile`](Dockerfile).
 Once Docker is installed and Docker engine is running:
 
 1. Build the image using command from [`docker-build.txt`](docker-build.txt)
