@@ -8,6 +8,7 @@ Repository:
 
 - [Contents](#contents)
 - [Endurance models](#endurance-models)
+- [East Mey models](#east-mey-models)
 - [PFLOTRAN-OGS reservoir simulations](#pflotran-ogs-reservoir-simulations)
 - [Docker image](#docker-image)
 - [References](#references)
@@ -18,10 +19,10 @@ Repository:
 
 - [`endurance/`](endurance/)
     Folder with Endurance CCS site sector models in [PFLOTRAN-OGS](https://docs.opengosim.com/) input format
+- [`east-mey/`](east-mey/)
+    East Mey CCS site models
 - [`Dockerfile`](Dockerfile)
     Docker image with clean installation of PFLOTRAN-OGS-1.8
-- [`eastmey`](eastmey)
-    Placeholder for East Mey CCS site models
 
 ## Endurance models
 
@@ -39,20 +40,41 @@ In [`endurance/`](endurance/) directory:
 
 In detail, specifications can be found in preprint [2].
 
+## East Mey models
+
+The East Mey models in this repository are based on a model developed by the **ACT consortium** (Accelerating CCS Technologies).
+Our work is based on that model, as opposed to later versions of the East Mey model that might exist outside of the public domain.
+
+East Mey CCS site model in PFLOTRAN-OGS's [input deck](https://docs.opengosim.com/manual/input_deck/input_deck/) format.
+In [`east-mey/`](east-mey/) directory:
+
+1. [`1-base.in`](east-mey/1-base.in)
+2. [`1-base-pc.in`](east-mey/1-base-pc.in)
+3. [`1-upsc.in`](east-mey/1-upsc.in)
+4. [`2-base.in`](east-mey/2-base.in)
+5. [`2-base-pc.in`](east-mey/2-base-pc.in)
+6. [`2-upsc.in`](east-mey/2-upsc.in)
+
+- `1-`/`2-` stands for two particular well placements and respective injection scenarios.
+- `-base` stands for base coarse dynamic model (directly based on ACT's developments).
+- `-base-pc` stands for the `-base` model with added capillary pressure model.
+- `-upsc` stands for capillary-limit upscaling conducted by [StrataTrapper](https://github.com/ImperialCollegeLondon/StrataTrapper) toolkit.
+
 ## PFLOTRAN-OGS reservoir simulations
 
 To run the supplied models, PFLOTRAN-OGS-1.8 installed on Ubuntu 22.04 is required. A dedicated Docker image can be used instead, which is covered in the [next section](#docker-image).
 
-For Endurance:
+For a model folder `<model_folder>` containing `.in` files:
 
-1. Unarchive large files with characteristic curves `chc[xyz].data` from `chc[xyz].zip` located at [`endurance/include/`](endurance/include/).
-2. Go to a model directory. Using the command line from repository root:
+0. Unarchive large files with characteristic curves `chc[xyz].data`
+from `chc[xyz].zip` located at `<model_folder>/include/`.
+1. Go to a model directory. Using the command line from repository root:
 
     ```shell
-    cd endurance
+    cd <model_folder>
     ```
 
-3. Start a simulation using the `run.sh` shell script
+2. Start a simulation using the `run.sh` shell script
 
     ```shell
     bash ./run.sh <model_name> [number_of_processes]
@@ -64,6 +86,7 @@ For Endurance:
     Examples:
 
     ```shell
+    cd endurance
     # runs with 8 parallel processes
     bash ./run.sh one-well-base 8
     # runs with 4 parallel processes
@@ -73,7 +96,7 @@ For Endurance:
     Currently, memory demand per process is significantly higher for upscaled models.
     Thus, it's preferable to use fewer processes for `-upsc` models, expecting slightly higher computation times.
 
-4. Visualize simulation results using [ResInsight](https://resinsight.org/) or equivalents.
+3. Visualize simulation results using [ResInsight](https://resinsight.org/) or equivalents.
 
     | Viscous-limit upscaling        | Upscaled with StrataTrapper    |
     |--------------------------------|--------------------------------|

@@ -1,0 +1,8 @@
+DIMENS
+82 123 36 /
+
+GDFILE
+grid.EGRID /
+
+INCLUDE
+PORO.inc /
