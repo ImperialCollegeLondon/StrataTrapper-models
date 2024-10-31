@@ -1,0 +1,21 @@
+INCLUDE
+"include/simulation-common.inc" /
+
+SUBSURFACE
+
+INCLUDE
+"include/subsurface-common.inc" /
+
+GRID
+    TYPE grdecl "include/grid-upsc.grdecl"
+END
+
+EXTERNAL_FILE "include/upsc/chcx.data"
+
+EXTERNAL_FILE "include/upsc/chcy.data"
+
+EXTERNAL_FILE "include/upsc/chcz.data"
+
+EXTERNAL_FILE "include/sch-2.inc"
+
+END_SUBSURFACE

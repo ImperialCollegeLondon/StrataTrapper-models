@@ -1,0 +1,13 @@
+INCLUDE
+PERMX.inc /
+
+INCLUDE
+PERMY.inc /
+
+INCLUDE
+PERMZ.inc /
+
+EQUALS
+SATNUM 1      /
+!IMBNUM 2      /
+END
