@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/ImperialCollegeLondon/StrataTrapper-models/compare/v0.1.0...v0.2.0) (2024-11-08)
+
+
+### Features
+
+* :sparkles: Upload East Mey models ([41bd5de](https://github.com/ImperialCollegeLondon/StrataTrapper-models/commit/41bd5de30332622de82fd68e9c09fa765fee072d))
+
 ## 0.1.0 (2024-10-18)
 
 
