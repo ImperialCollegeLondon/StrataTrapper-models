@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/ImperialCollegeLondon/StrataTrapper-models/compare/v0.2.1...v0.2.2) (2024-11-21)
+
+
+### Bug Fixes
+
+* **east-mey:** :adhesive_bandage: add model files to Docker image ([502a6b2](https://github.com/ImperialCollegeLondon/StrataTrapper-models/commit/502a6b2882eeb66c8ee60f424fb255a3ea7681b8))
+
 ## [0.2.1](https://github.com/ImperialCollegeLondon/StrataTrapper-models/compare/v0.2.0...v0.2.1) (2024-11-21)
 
 
