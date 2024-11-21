@@ -74,9 +74,14 @@ RUN make test
 # Copy input files
 
 WORKDIR /home/dockerer
+
 COPY common common
+
 COPY endurance endurance
 RUN mkdir ./endurance/out
+
+COPY east-mey east-mey
+RUN mkdir ./east-mey/out
 
 # Finalize
 
