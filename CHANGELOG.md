@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/ImperialCollegeLondon/StrataTrapper-models/compare/v0.2.0...v0.2.1) (2024-11-21)
+
+
+### Bug Fixes
+
+* **endurance:** :card_file_box: add missing PERMZ data ([28217c2](https://github.com/ImperialCollegeLondon/StrataTrapper-models/commit/28217c263756afddf091486025b08c29070370d8))
+
 ## [0.2.0](https://github.com/ImperialCollegeLondon/StrataTrapper-models/compare/v0.1.0...v0.2.0) (2024-11-08)
 
 
