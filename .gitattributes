@@ -2,3 +2,4 @@
 *.inc -linguist-detectable
 *.grdecl -linguist-detectable
 *.sch -linguist-detectable
+* text=auto eol=lf
