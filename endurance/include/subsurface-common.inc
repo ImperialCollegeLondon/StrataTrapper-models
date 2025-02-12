@@ -45,3 +45,12 @@ STRATA
     REGION all
     MATERIAL rock
 END
+
+FLOW_CONDITION hydrostatic_press
+    TYPE
+        PRESSURE hydrostatic
+    /
+
+    PRESSURE 1.0 Bar
+    DATUM_D  0 m
+END
