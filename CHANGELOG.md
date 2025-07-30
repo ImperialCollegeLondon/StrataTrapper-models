@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.3](https://github.com/ImperialCollegeLondon/StrataTrapper-models/compare/v0.2.2...v0.2.3) (2025-07-30)
+
+
+### Bug Fixes
+
+* 🐛 PETSs directory setup ([e7fc9e5](https://github.com/ImperialCollegeLondon/StrataTrapper-models/commit/e7fc9e5361aa202065e79130aafaae47acb9d748))
+* 🚸  build Dockerfile for default platform ([b5d0591](https://github.com/ImperialCollegeLondon/StrataTrapper-models/commit/b5d059191b017ba7b3e1883a2c0789815a8c3a99))
+* HDF5 configuration in Dockerfile ([b48be17](https://github.com/ImperialCollegeLondon/StrataTrapper-models/commit/b48be1779b21dce48edae9e7268f4c75e3544c52))
+
 ## [0.2.2](https://github.com/ImperialCollegeLondon/StrataTrapper-models/compare/v0.2.1...v0.2.2) (2024-11-21)
 
 
