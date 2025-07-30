@@ -39,9 +39,7 @@ RUN apt-get install -y git build-essential gfortran python3 python3-six python-s
 
 WORKDIR /opt
 
-RUN mkdir petsc
-
-RUN git clone https://gitlab.com/petsc/petsc.git /opt/petsc
+RUN git clone https://gitlab.com/petsc/petsc.git
 
 WORKDIR /opt/petsc
 
