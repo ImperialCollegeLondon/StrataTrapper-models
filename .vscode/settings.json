@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "endurance",
-        "east-mey"
+        "east-mey",
+        "docker"
     ]
 }

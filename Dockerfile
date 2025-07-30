@@ -48,7 +48,6 @@ RUN git checkout v3.19.1
 ENV PETSC_DIR=/opt/petsc
 ENV PETSC_ARCH=ubuntu-opt
 
-# WARNING: could not build PFLOTRAN-OGS with HDF5 enabled
 RUN ./configure --download-mpich=yes --download-hdf5=yes --with-hdf5-fortran-bindings=yes --download-fblaslapack=yes --download-ptscotch=yes --download-hypre=yes --with-debugging=0 COPTFLAGS=-O3 CXXOPTFLAGS=-O3 FOPTFLAGS=-O3
 
 RUN make PETSC_DIR=/opt/petsc PETSC_ARCH=ubuntu-opt all
